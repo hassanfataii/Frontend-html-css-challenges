@@ -20,6 +20,8 @@ a{
     color: inherit;
 }
 
+                            /*////////////////HOME PAGE///////////////////*/
+
 .site-header{
     background-color: white;
     border-bottom: 1px solid #ddd;
@@ -322,4 +324,54 @@ a{
     color: #ddd;
     text-align: center;
     padding: 30px;
+}
+
+/*TABLET SCREENS*/
+@media(max-width : 1050px){
+    .hero {
+        gap: 50px;
+        padding: 40px 30px;
+    }
+    .focus-grid{
+        grid-template-columns: repeat(3,1fr);
+    }
+    .focus-card:last-child{
+        grid-column: 2 / 3Okay;
+    }
+    .project-preview-grid{
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .project-preview-card:last-child {
+        grid-column: 1 / 3;
+        justify-self: center;
+        width: 50%;
+    }
+}
+
+/*MOBILE SCREENS*/
+@media(max-width : 600px){
+    .nav-bar{
+        flex-direction: column;
+    }
+    .hero{
+        flex-direction: column;
+    }
+    .focus-section,
+    .featured-projects,
+    .cta-section {
+        text-align: center;
+    }
+    .focus-grid{
+        grid-template-columns: repeat(1,1fr);
+    }
+    .focus-card:last-child{
+        grid-column: auto;
+    }
+    .project-preview-grid{
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .project-preview-card:last-child {
+        grid-column: auto;
+        width: 100%;
+    }
 }
