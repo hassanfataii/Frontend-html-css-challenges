@@ -342,7 +342,7 @@ a{
         grid-template-columns: repeat(3,1fr);
     }
     .focus-card:last-child{
-        grid-column: 2 / 3Okay;
+        grid-column: 2 / 3;
     }
     .project-preview-grid{
         grid-template-columns: repeat(2, 1fr);
@@ -379,5 +379,164 @@ a{
     .project-preview-card:last-child {
         grid-column: auto;
         width: 100%;
+    }
+}
+
+                            /*////////////////ABOUT PAGE///////////////////*/
+.about-hero{
+    display: flex;
+    margin-top: 15px;
+    padding: 40px;
+    gap: 20px;
+}
+
+
+.about-intro{
+    display: flex;
+    padding: 40px;
+    gap: 20px;
+}
+
+.learning-approach{
+    display: flex;
+    padding: 40px;
+    gap: 20px;
+}
+
+.approach-grid{
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+    flex: 1;
+}
+
+.approach-card{
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-top-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    box-shadow: -10px 10px #ddd;
+    transition: 0.5s;
+}
+
+.approach-card:hover{
+    box-shadow: -10px 10px hsl(0, 0%, 70%);
+    transform: translateY(-3px);
+}
+
+.current-focus{
+    display: flex;
+    flex-direction: column;
+    padding: 30px;
+    gap: 20px;
+    text-align: center;
+}
+
+.current-focus ul{
+    list-style: none;
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 25px;
+    border: 1px solid #ddd;
+    border-top-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    box-shadow: -10px 10px #ddd;
+}
+
+.current-focus li{
+    margin-bottom: 12px;
+}
+
+.current-focus li:last-child{
+    margin-bottom: 0;
+}
+
+.next-steps{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    padding: 30px;
+    gap: 15px;
+}
+
+.next-steps a{
+    background-color: #2b145f;
+    padding: 10px;
+    color: #ffffff;
+    text-align: center;
+    border-radius: 10px;
+    grid-column: 2/3;
+    transition: 0.5s;
+    font-weight: bold;
+}
+
+.next-steps a:hover{
+    color: #000;
+    background-color: #ddd;
+}
+.about-hero .section-label,
+.about-intro .section-label,
+.learning-approach .section-label,
+.next-steps .section-label {
+    flex-shrink: 0;
+    width: 130px;
+    min-height: 90px;
+    display: flex;
+    justify-content: center;
+    text-align: left;
+}
+
+.about-hero h1,
+.about-intro h2,
+.learning-approach h2,
+.next-steps h2 {
+    max-width: 450px;
+}
+.about-hero p:not(.section-label),
+.about-intro p:not(.section-label),
+.next-steps p {
+    max-width: 650px;
+    line-height: 1.8;
+}
+
+@media(max-width: 1050px){
+    .about-hero,
+    .about-intro,
+    .learning-approach,
+    .current-focus,
+    .next-steps{
+        max-width: 1000px;
+    }
+    .learning-approach{
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    .learning-approach .section-label{
+        width: 100%;
+        min-height: auto;
+    }
+}
+
+@media(max-width: 600px) {
+    .about-hero,
+    .about-intro,
+    .learning-approach,
+    .current-focus,
+    .next-steps{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .about-hero .section-label,
+    .about-intro .section-label,
+    .learning-approach .section-label,
+    .current-focus .section-label,
+    .next-steps .section-label{
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        min-height: auto;
     }
 }
