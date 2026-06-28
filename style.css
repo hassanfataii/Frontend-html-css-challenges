@@ -19,9 +19,6 @@ a{
     text-decoration: none;
     color: inherit;
 }
-
-                            /*////////////////HOME PAGE///////////////////*/
-
 .site-header{
     background-color: white;
     border-bottom: 1px solid #ddd;
@@ -59,12 +56,36 @@ a{
     color: #5938ff;
 }
 
+.site-footer{
+    background-color: #000;
+    color: #ddd;
+    text-align: center;
+    padding: 30px;
+}
+
+.section-label{
+    background-color: #2b145f;
+    padding: 10px 14px;
+    border-radius: 5px;
+    color: #ddd;
+    margin-bottom: 15px;
+}
+
+                            /*////////////////HOME PAGE///////////////////*/
+
 .hero{
     display: flex;
     justify-content: center;
     align-items: center;
     padding: 40px 20px;
     gap: 100px;
+}
+
+.hero .section-label{
+    background-color: inherit;
+    color: #000;
+    padding: 0;
+    margin: 0;
 }
 
 @keyframes fadeInUp {
@@ -151,14 +172,6 @@ a{
     padding: 30px;
     max-width: 800px;
     margin: 50px auto;
-}
-
-.intro-section .section-label {
-    background-color: #2b145f;
-    padding: 10px 14px;
-    border-radius: 5px;
-    color: #ddd;
-    margin-bottom: 15px;
 }
 
 .intro-section h2 {
@@ -317,13 +330,6 @@ a{
 .cta-section a:hover{
     color: #000;
     background-color: hsl(0, 0%, 70%);
-}
-
-.site-footer{
-    background-color: #000;
-    color: #ddd;
-    text-align: center;
-    padding: 30px;
 }
 
 /*TABLET SCREENS*/
