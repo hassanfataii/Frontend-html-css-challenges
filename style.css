@@ -542,3 +542,24 @@ a{
 }
 
                     /*////////////////PROJECTS PAGE///////////////////*/
+
+.projects-hero{
+    display: flex;
+    padding: 30px;
+    gap: 30px;
+    text-align: center;
+    margin-top: 30px;
+}
+
+.projects-hero .section-label{
+    flex-shrink: 0;
+    width: 130px;
+    min-height: 90px;
+}
+
+.project-builds{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 30px;
+}
