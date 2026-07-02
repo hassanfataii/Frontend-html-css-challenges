@@ -563,3 +563,18 @@ a{
     align-items: center;
     padding: 30px;
 }
+
+@media(max-width: 1050px){
+
+}
+
+@media(max-width: 600px){
+    .projects-hero{
+        flex-direction: column;
+    }
+    .projects-hero .section-label{
+        min-height: auto;
+        width: 100%;
+    }
+}
+
