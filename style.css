@@ -71,6 +71,14 @@ a{
     margin-bottom: 15px;
 }
 
+a:focus-visible,
+button:focus-visible,
+input:focus-visible,
+textarea:focus-visible{
+    outline: 3px solid #5938ff;
+    outline-offset: 4px;
+}
+
                             /*////////////////HOME PAGE///////////////////*/
 
 .hero{
@@ -880,7 +888,7 @@ a{
     }
 }
 
-                    /*////////////////CONTACT PAGE///////////////////*/
+                    /*////////////////IMAGE GALLERY PAGE///////////////////*/
 .gallery-hero{
     max-width: 800px;
     margin: 30px auto;
@@ -956,5 +964,143 @@ a{
     .gallery-grid{
         grid-template-columns: repeat(2, 1fr);
         grid-auto-rows: 220px;
+    }
+}
+
+                    /*////////////////ACCESSIBILITY PAGE///////////////////*/
+
+.accessibility-hero,
+.accessibility-intro,
+.accessibility-practices,
+.accessibility-form-section{
+    display: flex;
+    padding: 40px;
+    gap: 30px;
+}
+
+.accessibility-hero .section-label,
+.accessibility-intro .section-label,
+.accessibility-practices .section-label,
+.accessibility-form-section .section-label{
+    flex-shrink: 0;
+    width: 130px;
+    min-height: 90px;
+    display: flex;
+    justify-content: center;
+    text-align: left;
+}
+
+.accessibility-hero h1{
+    font-size: 3rem;
+    line-height: 1.2;
+    margin-bottom: 20px;
+}
+
+.accessibility-grid{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    max-width: 900px;
+    margin-top: 25px;
+}
+
+.accessibility-card{
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-top-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    box-shadow: -10px 10px #ddd;
+    transition: 0.5s;
+}
+
+.accessibility-card:last-child{
+    grid-column: 1 / 3;
+    justify-self: center;
+    width: 50%;
+}
+
+.accessibility-card:hover{
+    box-shadow: -10px 10px hsl(0, 0%, 70%);
+    transform: translateY(-3px);
+}
+
+.accessibility-form-section .contact-form{
+    max-width: 450px;
+    width: 100%;
+    text-align: left;
+    margin-top: 25px;
+}
+
+.accessibility-form-section .form-group input,
+.accessibility-form-section .form-group textarea{
+    width: 100%;
+    border: 1px solid #aaa;
+    border-radius: 5px;
+    font-family: inherit;
+}
+
+.accessibility-form-section .form-group textarea{
+    min-height: 120px;
+}
+
+@media(max-width: 1050px){
+    .accessibility-hero,
+    .accessibility-intro,
+    .accessibility-practices,
+    .accessibility-form-section{
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .accessibility-hero .section-label,
+    .accessibility-intro .section-label,
+    .accessibility-practices .section-label,
+    .accessibility-form-section .section-label{
+        width: 100%;
+        min-height: auto;
+        justify-content: center;
+    }
+
+    .accessibility-hero p:not(.section-label),
+    .accessibility-intro p,
+    .accessibility-practices p,
+    .accessibility-form-section p{
+        margin: 0 auto;
+    }
+
+    .accessibility-grid{
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .accessibility-form-section .contact-form{
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+@media(max-width: 600px){
+    .accessibility-hero,
+    .accessibility-intro,
+    .accessibility-practices,
+    .accessibility-form-section{
+        padding: 30px 20px;
+    }
+
+    .accessibility-hero h1{
+        font-size: 2.2rem;
+    }
+
+    .accessibility-grid{
+        grid-template-columns: 1fr;
+    }
+
+    .accessibility-card:last-child{
+    grid-column: auto;
+    width: 100%;
+    }
+
+    .accessibility-form-section .contact-form{
+        width: 100%;
     }
 }
