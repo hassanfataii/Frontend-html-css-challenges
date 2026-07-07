@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PORTFOLIO | ACCESSIBILITY</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="site-header">
+        <nav class="nav-bar" aria-label="Main navigation">
+            <a href="index.html" class="logo">Hassan Fatai</a>
+
+            <ul class="page-links">
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="about.html">ABOUT</a></li>
+                <li><a href="projects.html">PROJECTS</a></li>
+                <li><a href="contact.html">CONTACT</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="accessibility-hero">
+            <p class="section-label">Accessibility</p>
+
+            <div>
+                <h1>Designing for comfort and usability</h1>
+                <p>
+                    Accessibility is about making websites easier to use for everyone.
+                    This includes people using screen readers, keyboards, smaller screens,
+                    or anyone who simply needs clear content and a comfortable browsing experience.
+                </p>
+            </div>
+        </section>
+
+        <section class="accessibility-intro">
+            <p class="section-label">Purpose</p>
+
+            <div>
+                <h2>Why accessibility matters</h2>
+                <p>
+                    A website should not depend only on visuals to make sense. Good structure,
+                    readable text, clear labels, and useful navigation help users understand
+                    content more easily, whether they are reading the page visually or using
+                    assistive technology.
+                </p>
+            </div>
+        </section>
+
+        <section class="accessibility-practices">
+            <p class="section-label">Practices</p>
+
+            <div>
+                <h2>Accessibility practices used on this page</h2>
+
+                <div class="accessibility-grid">
+                    <article class="accessibility-card">
+                        <h3>Semantic structure</h3>
+                        <p>
+                            The page uses meaningful elements such as header, nav, main,
+                            section, article, form, label, and footer to give the content
+                            a clear structure.
+                        </p>
+                    </article>
+
+                    <article class="accessibility-card">
+                        <h3>Screen reader support</h3>
+                        <p>
+                            The navigation includes an aria-label, and the page uses a clear
+                            heading order so assistive technology can interpret the content
+                            more easily.
+                        </p>
+                    </article>
+
+                    <article class="accessibility-card">
+                        <h3>Readable content</h3>
+                        <p>
+                            Text is written clearly, spaced properly, and arranged in sections
+                            so users do not have to fight the page just to understand it.
+                        </p>
+                    </article>
+
+                    <article class="accessibility-card">
+                        <h3>Labelled form fields</h3>
+                        <p>
+                            Each form field has a visible label connected to it, making the
+                            form easier to understand for both visual users and screen readers.
+                        </p>
+                    </article>
+
+                    <article class="accessibility-card">
+                        <h3>Visible focus states</h3>
+                        <p>
+                            Links, buttons, and form fields should show a clear outline when users navigate with a keyboard.
+                        </p>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section class="accessibility-form-section">
+            <p class="section-label">Example</p>
+
+            <div>
+                <h2>Accessible form example</h2>
+                <p>
+                    This form demonstrates how labels connect directly to inputs using matching
+                    for and id values. It keeps the form understandable instead of making users
+                    guess like they are solving a tiny web-based escape room.
+                </p>
+
+                <form class="contact-form">
+                    <div class="form-group">
+                        <label for="access-name">Name</label>
+                        <input type="text" id="access-name" name="name">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="access-email">Email</label>
+                        <input type="email" id="access-email" name="email">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="access-message">Message</label>
+                        <textarea id="access-message" name="message"></textarea>
+                    </div>
+
+                    <button type="submit">Send message</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <p>&copy; 2026 Hassan Fatai. Built as part of a frontend skills refresh.</p>
+    </footer>
+</body>
+</html>
