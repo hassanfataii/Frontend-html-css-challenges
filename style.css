@@ -1227,3 +1227,147 @@ textarea:focus-visible{
         height: 350px;
     }
 }
+
+                    /*////////////////CSS FRAMEWORK PAGE///////////////////*/
+
+.framework-hero{
+    padding: 40px;
+}
+
+.framework-hero .section-label{
+    display: inline-block;
+}
+
+.framework-hero h1{
+    font-size: 3rem;
+    line-height: 1.2;
+    margin-bottom: 20px;
+}
+
+.framework-hero p:not(.section-label){
+    max-width: 750px;
+    line-height: 1.8;
+}
+
+.framework-note{
+    margin-top: 15px;
+    font-weight: bold;
+    color: #2b145f;
+}
+
+.framework-features{
+    padding: 40px;
+}
+
+.framework-card{
+    border: 1px solid #ddd;
+    border-top-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    box-shadow: -10px 10px #ddd;
+    transition: 0.5s;
+}
+
+.framework-card:hover{
+    box-shadow: -10px 10px hsl(0, 0%, 70%);
+    transform: translateY(-3px);
+}
+
+.framework-card .card-title{
+    color: #2b145f;
+    font-size: 1.3rem;
+    margin-bottom: 15px;
+}
+
+.framework-card .card-text{
+    line-height: 1.8;
+}
+
+.framework-badge{
+    background-color: #2b145f;
+    color: #ffffff;
+    padding: 8px 10px;
+}
+
+.framework-showcase{
+    padding: 40px;
+}
+
+.framework-showcase .section-label{
+    display: inline-block;
+}
+
+.framework-showcase h2{
+    color: #2b145f;
+    margin-bottom: 15px;
+}
+
+.framework-showcase p:not(.section-label){
+    max-width: 650px;
+    line-height: 1.8;
+    margin-bottom: 20px;
+}
+
+.framework-btn{
+    background-color: #2b145f;
+    color: #ffffff;
+    font-weight: bold;
+    border-radius: 5px;
+    padding: 10px 14px;
+    transition: 0.5s;
+}
+
+.framework-btn:hover{
+    background-color: #ddd;
+    color: #000;
+}
+
+.framework-panel{
+    border: 1px solid #ddd;
+    border-top-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    box-shadow: -10px 10px #ddd;
+    padding: 25px;
+}
+
+.framework-panel h3{
+    color: #2b145f;
+    margin-bottom: 20px;
+}
+
+.framework-list .list-group-item{
+    line-height: 1.7;
+}
+
+@media(max-width: 1050px){
+    .framework-hero,
+    .framework-features,
+    .framework-showcase{
+        text-align: center;
+    }
+
+    .framework-hero p:not(.section-label),
+    .framework-showcase p:not(.section-label){
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .framework-panel{
+        text-align: left;
+    }
+}
+
+@media(max-width: 600px){
+    .framework-hero,
+    .framework-features,
+    .framework-showcase{
+        padding: 30px 20px;
+    }
+
+    .framework-hero h1{
+        font-size: 2.2rem;
+    }
+
+    .framework-panel{
+        padding: 20px;
+    }
+}
