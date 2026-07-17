@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PORTFOLIO | Web Application UI</title>
+    <link rel="stylesheet" href="web-ui.css">
+</head>
+<body>
+    <div class="app-layout">
+
+        <aside class="sidebar">
+            <div class="app-logo">
+                <span>FT</span>
+                <div>
+                    <h1>FitTrack</h1>
+                    <p>Fitness Dashboard</p>
+                </div>
+            </div>
+
+            <nav class="app-nav" aria-label="Dashboard navigation">
+                <a href="#" class="active">Overview</a>
+                <a href="#">Workouts</a>
+                <a href="#">Progress</a>
+                <a href="#">Nutrition</a>
+                <a href="#">Settings</a>
+            </nav>
+
+            <details class="mobile-nav">
+                <summary aria-label="Open navigation menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </summary>
+
+                <nav aria-label="Mobile dashboard navigation">
+                    <a href="#" class="active">Overview</a>
+                    <a href="#">Workouts</a>
+                    <a href="#">Progress</a>
+                    <a href="#">Nutrition</a>
+                    <a href="#">Settings</a>
+                </nav>
+            </details>
+
+            <div class="sidebar-card">
+                <p>Current plan</p>
+                <h2>Lean Strength</h2>
+                <span>Week 4 of 8</span>
+            </div>
+        </aside>
+
+        <main class="dashboard">
+
+            <header class="dashboard-header">
+                <div>
+                    <p class="section-label">Overview</p>
+                    <h2>Today's Fitness Dashboard</h2>
+                    <p>Track your workout, nutrition, hydration, and weekly progress in one place.</p>
+                </div>
+
+                <div class="profile-card">
+                    <span>HF</span>
+                    <div>
+                        <strong>Hassan</strong>
+                        <p>Active today</p>
+                    </div>
+                </div>
+            </header>
+
+            <section class="stats-grid" aria-label="Fitness summary">
+                <article class="stat-card">
+                    <p>Workout</p>
+                    <h3>Upper Body</h3>
+                    <span>Scheduled for 6:30 PM</span>
+                </article>
+
+                <article class="stat-card">
+                    <p>Calories</p>
+                    <h3>1,840</h3>
+                    <span>460 remaining today</span>
+                </article>
+
+                <article class="stat-card">
+                    <p>Protein</p>
+                    <h3>128g</h3>
+                    <span>22g left to target</span>
+                </article>
+
+                <article class="stat-card">
+                    <p>Water</p>
+                    <h3>2.1L</h3>
+                    <span>Goal: 3L daily</span>
+                </article>
+            </section>
+
+            <section class="dashboard-grid">
+
+                <article class="panel workout-panel">
+                    <div class="panel-header">
+                        <div>
+                            <p class="section-label">Today</p>
+                            <h2>Push Session</h2>
+                        </div>
+
+                        <span class="status">In progress</span>
+                    </div>
+
+                    <ul class="workout-list">
+                        <li>
+                            <span>Dumbbell Press</span>
+                            <strong>4 sets</strong>
+                        </li>
+
+                        <li>
+                            <span>Shoulder Press</span>
+                            <strong>3 sets</strong>
+                        </li>
+
+                        <li>
+                            <span>Triceps Pushdown</span>
+                            <strong>3 sets</strong>
+                        </li>
+
+                        <li>
+                            <span>Incline Walk</span>
+                            <strong>10 min</strong>
+                        </li>
+                    </ul>
+                </article>
+
+                <article class="panel progress-panel">
+                    <div class="panel-header">
+                        <div>
+                            <p class="section-label">Progress</p>
+                            <h2>Weekly Goals</h2>
+                        </div>
+                    </div>
+
+                    <div class="progress-item">
+                        <div>
+                            <span>Workouts</span>
+                            <strong>4/5</strong>
+                        </div>
+                        <div class="progress-track">
+                            <div class="progress-fill workouts"></div>
+                        </div>
+                    </div>
+
+                    <div class="progress-item">
+                        <div>
+                            <span>Protein target</span>
+                            <strong>85%</strong>
+                        </div>
+                        <div class="progress-track">
+                            <div class="progress-fill protein"></div>
+                        </div>
+                    </div>
+
+                    <div class="progress-item">
+                        <div>
+                            <span>Steps</span>
+                            <strong>62%</strong>
+                        </div>
+                        <div class="progress-track">
+                            <div class="progress-fill steps"></div>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="panel nutrition-panel">
+                    <div class="panel-header">
+                        <div>
+                            <p class="section-label">Nutrition</p>
+                            <h2>Daily Intake</h2>
+                        </div>
+                    </div>
+
+                    <div class="nutrition-grid">
+                        <div>
+                            <span>Protein</span>
+                            <strong>128g</strong>
+                        </div>
+
+                        <div>
+                            <span>Carbs</span>
+                            <strong>210g</strong>
+                        </div>
+
+                        <div>
+                            <span>Fats</span>
+                            <strong>58g</strong>
+                        </div>
+
+                        <div>
+                            <span>Water</span>
+                            <strong>2.1L</strong>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="panel activity-panel">
+                    <div class="panel-header">
+                        <div>
+                            <p class="section-label">Activity</p>
+                            <h2>Recent Logs</h2>
+                        </div>
+                    </div>
+
+                    <ul class="activity-list">
+                        <li>
+                            <span class="activity-dot"></span>
+                            <div>
+                                <strong>Breakfast logged</strong>
+                                <p>Eggs, oats, and fruit added</p>
+                            </div>
+                        </li>
+
+                        <li>
+                            <span class="activity-dot"></span>
+                            <div>
+                                <strong>Workout updated</strong>
+                                <p>Push session marked in progress</p>
+                            </div>
+                        </li>
+
+                        <li>
+                            <span class="activity-dot"></span>
+                            <div>
+                                <strong>Water intake added</strong>
+                                <p>2.1 litres tracked today</p>
+                            </div>
+                        </li>
+                    </ul>
+                </article>
+
+                <a href="projects.html" class="backBtn">BACK TO PROJECTS</a>
+
+            </section>
+
+        </main>
+
+    </div>
+</body>
+</html>
