@@ -1539,6 +1539,10 @@ textarea:focus-visible{
     .framework-panel{
         text-align: left;
     }
+    
+    .container{
+    margin-bottom: 30px;
+    }
 }
 
 @media(max-width: 600px){
